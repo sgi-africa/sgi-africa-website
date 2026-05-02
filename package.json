@@ -1,6 +1,6 @@
 {
-  "name": "sgi-website",
-  "version": "0.1.0",
+  "name": "sgi-africa-website",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
