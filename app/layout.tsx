@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 import { Navbar } from "@/components/site/navbar";
 import { Footer } from "@/components/site/footer";
@@ -78,7 +79,10 @@ export default function RootLayout({
     >
       <body className="bg-background text-foreground min-h-full flex flex-col font-sans">
         <Navbar />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1">
+          {children}
+          <Analytics />
+        </main>
         <Footer />
       </body>
     </html>
