@@ -6,7 +6,6 @@ Production-ready, dark-themed marketing site for **Software Group Innovation** -
 Built with **Next.js 16 (App Router)**, **Tailwind CSS v4**, **shadcn/ui** (radix-nova
 preset) and **Framer Motion**.
 
-
 ## Project structure
 
 ```
@@ -60,10 +59,10 @@ forces dark mode at the `<html>` level):
 
 Custom utilities:
 
-- `.bg-brand-gradient` — blue → cyan diagonal gradient (CTAs, hero accents)
-- `.text-brand-gradient` — same gradient as text fill
-- `.bg-brand-radial` — soft hero halo
-- `.bg-grid-faint` — tech-aesthetic grid overlay
+- `.bg-brand-gradient -` blue → cyan diagonal gradient (CTAs, hero accents)
+- `.text-brand-gradient` - same gradient as text fill
+- `.bg-brand-radial` - soft hero halo
+- `.bg-grid-faint`- tech-aesthetic grid overlay
 
 ---
 
@@ -84,18 +83,19 @@ npm run lint         # ESLint
 ```
 
 ## Configuration
+
 Update SEO metadata in `app/layout.tsx` (and per-page `metadata` exports).
 
 ---
 
 ## Tech stack
 
-- **Next.js** 16.2 — App Router, React Server Components, Server Actions
+- **Next.js** 16.2 - App Router, React Server Components, Server Actions
 - **React** 19
 - **Tailwind CSS** v4
 - **shadcn/ui** (radix-nova preset)
 - **lucide-react** + inline SVG glyphs for brand icons
-- **motion** (Framer Motion v12) — `whileInView` fade-ups
+- **motion** (Framer Motion v12) - `whileInView` fade-ups
 - **TypeScript** strict mode
 
 ---
@@ -107,3 +107,4 @@ Update SEO metadata in `app/layout.tsx` (and per-page `metadata` exports).
 - Forms: native `<label>` + `aria-invalid` + `role="alert"` for errors
 - Mobile-first; nav collapses into a Sheet drawer at `< md`
 - Animations are subtle, run once, and respect element-in-view triggers
+
