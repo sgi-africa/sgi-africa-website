@@ -21,12 +21,12 @@ const jetbrainsMono = JetBrains_Mono({
 const siteUrl = "https://sgi.africa";
 const siteName = "Software Group Innovation";
 const siteDescription =
-  "Software Group Innovation (SGI) builds technology solutions for impact-driven organizations — financial inclusion, health innovation, cybersecurity and digital transformation that empower communities.";
+  "Software Group Innovation (SGI) builds technology solutions for impact-driven organizations - financial inclusion, health innovation, cybersecurity and digital transformation that empower communities.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${siteName} — Technology Solutions for Impact-Driven Organizations`,
+    default: `${siteName} - Technology Solutions for Impact-Driven Organizations`,
     template: `%s · ${siteName}`,
   },
   description: siteDescription,
@@ -52,12 +52,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName,
-    title: `${siteName} — Technology Solutions for Impact-Driven Organizations`,
+    title: `${siteName} - Technology Solutions for Impact-Driven Organizations`,
     description: siteDescription,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteName} — Technology Solutions for Impact-Driven Organizations`,
+    title: `${siteName} - Technology Solutions for Impact-Driven Organizations`,
     description: siteDescription,
   },
   robots: {
