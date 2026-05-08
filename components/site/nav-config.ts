@@ -25,7 +25,7 @@ export const siteConfig = {
   tagline: "Technology Solutions for Impact-Driven Organizations",
   description:
     "Software Group Innovation builds digital systems that drive financial inclusion, community transformation and digital empowerment across Africa and beyond.",
-  email: "info@sgi.africa",
+  email: "info@sgi-africa.com",
   /** Street + mailing lines (single source of truth for office address). */
   officeAddressLines: [
     "Textile House, Morogoro Road / Indira Gandhi Street",

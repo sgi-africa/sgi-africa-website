@@ -115,7 +115,7 @@ export async function submitContact(
 
   return {
     status: "success",
-    message: `Thanks, ${name.split(" ")[0]} — we received your message and will reply within one business day.`,
+    message: `Thanks, ${name.split(" ")[0]} - we received your message and will reply within one business day.`,
     values: { name: "", email: "", message: "" },
   };
 }
