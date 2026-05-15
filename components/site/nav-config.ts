@@ -1,3 +1,5 @@
+export const SITE_URL = "https://sgi-africa.com";
+
 export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },

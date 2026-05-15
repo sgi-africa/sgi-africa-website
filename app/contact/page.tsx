@@ -10,14 +10,28 @@ import {
 import { FadeIn } from "@/components/site/fade-in";
 import { GradientBlob } from "@/components/site/gradient-blob";
 import { Section } from "@/components/site/section";
-import { siteConfig } from "@/components/site/nav-config";
+import { siteConfig, SITE_URL } from "@/components/site/nav-config";
 
 import { ContactForm } from "./contact-form";
 
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with Software Group Innovation. Tell us about your goal — we'll reply within one business day.",
+    "Get in touch with Software Group Innovation (SGI Africa). Tell us about your organisation and what you're trying to transform — we'll reply within one business day.",
+  alternates: {
+    canonical: `${SITE_URL}/contact`,
+  },
+  openGraph: {
+    url: `${SITE_URL}/contact`,
+    title: "Contact · Software Group Innovation",
+    description:
+      "Get in touch with Software Group Innovation (SGI Africa). Tell us about your organisation and what you're trying to transform — we'll reply within one business day.",
+  },
+  twitter: {
+    title: "Contact · Software Group Innovation",
+    description:
+      "Get in touch with Software Group Innovation (SGI Africa). Tell us about your organisation and what you're trying to transform — we'll reply within one business day.",
+  },
 };
 
 const contactDetails = [

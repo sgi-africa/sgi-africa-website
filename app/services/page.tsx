@@ -12,11 +12,26 @@ import { FadeIn } from "@/components/site/fade-in";
 import { GradientBlob } from "@/components/site/gradient-blob";
 import { Section } from "@/components/site/section";
 import { ServiceBlock } from "@/components/site/service-block";
+import { SITE_URL } from "@/components/site/nav-config";
 
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Explore SGI's four practice areas — Technology Solutions, Financial Innovation, Health Innovation and Cybersecurity — built to deliver measurable impact.",
+    "Explore SGI Africa's four practice areas — Technology Solutions, Financial Innovation, Health Innovation and Cybersecurity — built to deliver measurable, community-level impact across Africa.",
+  alternates: {
+    canonical: `${SITE_URL}/services`,
+  },
+  openGraph: {
+    url: `${SITE_URL}/services`,
+    title: "Services · Software Group Innovation",
+    description:
+      "Explore SGI Africa's four practice areas — Technology Solutions, Financial Innovation, Health Innovation and Cybersecurity — built to deliver measurable, community-level impact across Africa.",
+  },
+  twitter: {
+    title: "Services · Software Group Innovation",
+    description:
+      "Explore SGI Africa's four practice areas — Technology Solutions, Financial Innovation, Health Innovation and Cybersecurity — built to deliver measurable, community-level impact across Africa.",
+  },
 };
 
 const serviceBlocks = [

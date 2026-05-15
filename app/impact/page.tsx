@@ -16,11 +16,26 @@ import { GradientBlob } from "@/components/site/gradient-blob";
 import { Section } from "@/components/site/section";
 import { SectionHeading } from "@/components/site/section-heading";
 import { StatCard } from "@/components/site/stat-card";
+import { SITE_URL } from "@/components/site/nav-config";
 
 export const metadata: Metadata = {
   title: "Impact",
   description:
-    "SGI's impact story — global ambitions, community transformation, real systems built and the people they serve.",
+    "SGI Africa's impact story — 10+ communities engaged, 5,000+ users empowered, and real systems built across financial inclusion, health innovation and cybersecurity in Africa.",
+  alternates: {
+    canonical: `${SITE_URL}/impact`,
+  },
+  openGraph: {
+    url: `${SITE_URL}/impact`,
+    title: "Impact · Software Group Innovation",
+    description:
+      "SGI Africa's impact story — 10+ communities engaged, 5,000+ users empowered, and real systems built across financial inclusion, health innovation and cybersecurity in Africa.",
+  },
+  twitter: {
+    title: "Impact · Software Group Innovation",
+    description:
+      "SGI Africa's impact story — 10+ communities engaged, 5,000+ users empowered, and real systems built across financial inclusion, health innovation and cybersecurity in Africa.",
+  },
 };
 
 const metrics = [

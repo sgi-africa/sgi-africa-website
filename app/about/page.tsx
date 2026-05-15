@@ -7,11 +7,26 @@ import { GradientBlob } from "@/components/site/gradient-blob";
 import { Section } from "@/components/site/section";
 import { SectionHeading } from "@/components/site/section-heading";
 import { TeamCard } from "@/components/site/team-card";
+import { SITE_URL } from "@/components/site/nav-config";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About SGI Africa",
   description:
-    "Software Group Innovation is a forward-thinking innovation ecosystem dedicated to transforming communities through technology, innovation and opportunity.",
+    "Software Group Innovation (SGI) is a forward-thinking African technology startup dedicated to transforming communities through technology, innovation and opportunity — headquartered in Dar es Salaam, Tanzania.",
+  alternates: {
+    canonical: `${SITE_URL}/about`,
+  },
+  openGraph: {
+    url: `${SITE_URL}/about`,
+    title: "About SGI Africa · Software Group Innovation",
+    description:
+      "Software Group Innovation (SGI) is a forward-thinking African technology startup dedicated to transforming communities through technology, innovation and opportunity — headquartered in Dar es Salaam, Tanzania.",
+  },
+  twitter: {
+    title: "About SGI Africa · Software Group Innovation",
+    description:
+      "Software Group Innovation (SGI) is a forward-thinking African technology startup dedicated to transforming communities through technology, innovation and opportunity — headquartered in Dar es Salaam, Tanzania.",
+  },
 };
 
 const leadership = [

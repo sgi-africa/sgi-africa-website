@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import {
   ArrowRightIcon,
@@ -15,6 +16,7 @@ import {
   ZapIcon,
 } from "lucide-react";
 
+import { SITE_URL } from "@/components/site/nav-config";
 import { Button } from "@/components/ui/button";
 import { AudienceCard } from "@/components/site/audience-card";
 import { CtaBanner } from "@/components/site/cta-banner";
@@ -27,6 +29,26 @@ import { Section } from "@/components/site/section";
 import { SectionHeading } from "@/components/site/section-heading";
 import { StatCard } from "@/components/site/stat-card";
 import { sgiProducts, siteConfig } from "@/components/site/nav-config";
+
+export const metadata: Metadata = {
+  title: "Software Group Innovation — Technology Solutions for Impact-Driven Organizations",
+  description:
+    "SGI Africa is an African technology startup and innovation ecosystem building digital systems for financial inclusion, health innovation, cybersecurity and community transformation across Africa and beyond.",
+  alternates: {
+    canonical: SITE_URL,
+  },
+  openGraph: {
+    url: SITE_URL,
+    title: "Software Group Innovation — Technology Solutions for Impact-Driven Organizations",
+    description:
+      "SGI Africa is an African technology startup and innovation ecosystem building digital systems for financial inclusion, health innovation, cybersecurity and community transformation across Africa and beyond.",
+  },
+  twitter: {
+    title: "Software Group Innovation — Technology Solutions for Impact-Driven Organizations",
+    description:
+      "SGI Africa is an African technology startup and innovation ecosystem building digital systems for financial inclusion, health innovation, cybersecurity and community transformation across Africa and beyond.",
+  },
+};
 
 const services = [
   {
