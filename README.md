@@ -6,43 +6,6 @@ Production-ready, dark-themed marketing site for **Software Group Innovation** -
 Built with **Next.js 16 (App Router)**, **Tailwind CSS v4**, **shadcn/ui** (radix-nova
 preset) and **Framer Motion**.
 
-## Project structure
-
-```
-app/
-  layout.tsx              Root layout, Inter font, Navbar + Footer, dark theme
-  globals.css             Tailwind v4 + SGI brand tokens (dark)
-  page.tsx                Home
-  about/page.tsx
-  services/page.tsx
-  impact/page.tsx
-  contact/
-    page.tsx              Contact page shell
-    contact-form.tsx      Client form with useActionState
-    actions.ts            Server action — sends contact mail via Resend
-components/
-  ui/                     shadcn primitives (button, card, input, sheet, …)
-  site/
-    logo.tsx              SVG monogram + wordmark
-    navbar.tsx            Sticky nav with mobile Sheet drawer
-    footer.tsx            Brand, sitemap, contact, social
-    section.tsx           Vertical-rhythm section wrapper
-    section-heading.tsx   Eyebrow + title + description pattern
-    gradient-blob.tsx     Decorative radial gradient
-    fade-in.tsx           Framer Motion fade-up wrapper + Stagger
-    feature-card.tsx
-    audience-card.tsx
-    pillar-card.tsx
-    stat-card.tsx
-    team-card.tsx
-    service-block.tsx
-    cta-banner.tsx
-    nav-config.ts         Nav links + global site config (email, office address)
-lib/
-  utils.ts                cn() — clsx + tailwind-merge
-```
-
----
 
 ## Brand system
 
@@ -63,27 +26,6 @@ Custom utilities:
 - `.text-brand-gradient` - same gradient as text fill
 - `.bg-brand-radial` - soft hero halo
 - `.bg-grid-faint`- tech-aesthetic grid overlay
-
----
-
-## Getting started
-
-```bash
-npm install
-npm run dev          # http://localhost:3000
-```
-
-Available scripts:
-
-```bash
-npm run dev          # Dev server (Turbopack)
-npm run build        # Production build
-npm run start        # Run production build
-npm run lint         # ESLint
-```
-
-
-## Configuration
 
 ## Tech stack
 
